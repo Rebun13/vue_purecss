@@ -1,5 +1,4 @@
 :root {
-    --main-color: #E0E0E0;
     --secondary-color: #0A626F;
     --secondary-color-alt: #07414a;
     --accent-color: #FFC700;
@@ -8,6 +7,27 @@
 
 .custom-restricted-width {
     display: inline-block;
+}
+
+h1 {
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2em;
+}
+
+* {
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
@@ -57,4 +77,9 @@ a:visited {
 
 .pure-menu-link:hover {
     background-color: var(--secondary-color-alt);
+}
+
+/* module */
+.header {
+    border-bottom: 1px solid var(--secondary-color);
 }
