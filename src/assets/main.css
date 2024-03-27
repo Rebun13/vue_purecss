@@ -1,0 +1,60 @@
+:root {
+    --main-color: #E0E0E0;
+    --secondary-color: #0A626F;
+    --secondary-color-alt: #07414a;
+    --accent-color: #FFC700;
+    --menu-width: 160px;
+}
+
+.custom-restricted-width {
+    display: inline-block;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+a:visited {
+    color: var(--secondary-color-alt);
+}
+
+#menu {
+    color: #E0E0E0;
+    background-color: #0A626F;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--menu-width);
+}
+
+#app {
+    padding-left: var(--menu-width);
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    max-width: 1024px;
+}
+
+.pure-menu-link,
+.pure-menu-link:visited {
+    color: var(--main-color);
+    padding-left: 2em;
+    transition: padding-left .25s;
+}
+
+.router-link-active.pure-menu-link {
+    color: var(--accent-color);
+    padding-left: 1em;
+}
+
+.pure-menu-link:focus {
+    background-color: var(--secondary-color);
+}
+
+.pure-menu-link:hover {
+    background-color: var(--secondary-color-alt);
+}
