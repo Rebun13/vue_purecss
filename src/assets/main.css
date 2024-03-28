@@ -1,12 +1,19 @@
 :root {
+    --primary-color: #eaeaea;
+    --primary-color-alt: #cccccc;
     --secondary-color: #0A626F;
     --secondary-color-alt: #07414a;
     --accent-color: #FFC700;
+    --accent-color-alt: #c69b00;
     --menu-width: 160px;
 }
 
 .custom-restricted-width {
     display: inline-block;
+}
+
+body {
+    background-color: var(--primary-color);
 }
 
 h1 {
@@ -15,6 +22,7 @@ h1 {
     font-weight: 300;
     font-style: normal;
     font-size: 4em;
+    color: #555555;
 }
 
 h2 {
@@ -22,22 +30,26 @@ h2 {
     font-weight: 200;
     font-style: normal;
     font-size: 2em;
+    color: var(--secondary-color);
 }
 
 * {
     font-family: "Hind Guntur", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #555555;
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 a:visited {
-    color: var(--secondary-color-alt);
+    color: var(--accent-color-alt);
 }
 
+/* LAYOUT */
 #menu {
     color: #E0E0E0;
     background-color: #0A626F;
@@ -52,16 +64,41 @@ a:visited {
     padding-left: var(--menu-width);
 }
 
-#main {
+#header {
+    border-bottom: 1px solid #555555;
+    padding: 1em;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
     max-width: 1024px;
 }
 
+#header>h1,
+#header>h2 {
+    margin: 0 auto;
+}
+
+#content {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    height: 160px;
+    background-color: var(--primary-color-alt);
+    bottom: 0;
+}
+
+#footer>p {}
+
+/* THEME */
 .pure-menu-link,
 .pure-menu-link:visited {
-    color: var(--main-color);
+    color: var(--primary-color);
     padding-left: 2em;
     transition: padding-left .25s;
 }
@@ -77,9 +114,4 @@ a:visited {
 
 .pure-menu-link:hover {
     background-color: var(--secondary-color-alt);
-}
-
-/* module */
-.header {
-    border-bottom: 1px solid var(--secondary-color);
 }
