@@ -1,117 +1,118 @@
 :root {
-    --primary-color: #eaeaea;
-    --primary-color-alt: #cccccc;
-    --secondary-color: #0A626F;
-    --secondary-color-alt: #07414a;
-    --accent-color: #FFC700;
-    --accent-color-alt: #c69b00;
-    --menu-width: 160px;
+  --primary-color: #eaeaea;
+  --primary-color-alt: #cccccc;
+  --secondary-color: #0a626f;
+  --secondary-color-alt: #07414a;
+  --accent-color: #ffc700;
+  --accent-color-alt: #c69b00;
+  --menu-width: 160px;
 }
 
 .custom-restricted-width {
-    display: inline-block;
+  display: inline-block;
 }
 
 body {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 h1 {
-    font-family: "Rokkitt", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 4em;
-    color: #555555;
+  font-family: 'Rokkitt', serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 4em;
+  color: #555555;
 }
 
 h2 {
-    font-family: "Mukta", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 2em;
-    color: var(--secondary-color);
+  font-family: 'Mukta', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2em;
+  color: var(--secondary-color);
 }
 
 * {
-    font-family: "Hind Guntur", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #555555;
+  font-family: 'Hind Guntur', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #555555;
 }
 
 a {
-    color: var(--accent-color);
-    text-decoration: none;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 a:visited {
-    color: var(--accent-color-alt);
+  color: var(--accent-color-alt);
 }
 
 /* LAYOUT */
 #menu {
-    color: #E0E0E0;
-    background-color: #0A626F;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: var(--menu-width);
+  color: #e0e0e0;
+  background-color: #0a626f;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--menu-width);
 }
 
 #app {
-    padding-left: var(--menu-width);
+  padding-left: var(--menu-width);
 }
 
 #header {
-    border-bottom: 1px solid #555555;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1024px;
+  border-bottom: 1px solid #555555;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
 }
 
-#header>h1,
-#header>h2 {
-    margin: 0 auto;
+#header > h1,
+#header > h2 {
+  margin: 0 auto;
 }
 
 #content {
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1024px;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
 }
 
 #footer {
-    position: absolute;
-    width: 100%;
-    padding: 1em;
-    height: 160px;
-    background-color: var(--primary-color-alt);
-    bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  height: 160px;
+  background-color: var(--primary-color-alt);
+  bottom: 0;
 }
 
-#footer>p {}
+#footer > p {
+}
 
 /* THEME */
 .pure-menu-link,
 .pure-menu-link:visited {
-    color: var(--primary-color);
-    padding-left: 2em;
-    transition: padding-left .25s;
+  color: var(--primary-color);
+  padding-left: 2em;
+  transition: padding-left 0.25s;
 }
 
 .router-link-active.pure-menu-link {
-    color: var(--accent-color);
-    padding-left: 1em;
+  color: var(--accent-color);
+  padding-left: 1em;
 }
 
 .pure-menu-link:focus {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .pure-menu-link:hover {
-    background-color: var(--secondary-color-alt);
+  background-color: var(--secondary-color-alt);
 }

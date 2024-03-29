@@ -10,7 +10,6 @@ import Sidebar from './components/SideBar.vue'
   <div id="main">
     <RouterView />
   </div>
-
 </template>
 
 <style scoped></style>
